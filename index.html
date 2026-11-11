@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>映刻 Inkin 隐私政策</title>
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 48px 20px 96px;
+    background: #F7F6F3;
+    color: #16161A;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+    line-height: 1.78;
+    font-size: 16px;
+  }
+  main { max-width: 760px; margin: 0 auto; }
+  header { border-bottom: 1px solid #E2E0DA; padding-bottom: 24px; margin-bottom: 36px; }
+  h1 { font-size: 30px; margin: 0 0 14px; letter-spacing: -0.4px; font-weight: 600; }
+  h2 { font-size: 19px; margin: 44px 0 14px; font-weight: 600; letter-spacing: -0.2px; }
+  h3 { font-size: 16px; margin: 26px 0 8px; font-weight: 600; }
+  p, li { color: #2A2A30; }
+  ul, ol { padding-left: 22px; }
+  li { margin: 7px 0; }
+  .meta { font-size: 14px; color: #6B6B74; }
+  .meta span { display: inline-block; margin-right: 18px; }
+  .callout {
+    background: #FFFFFF;
+    border: 1px solid #E2E0DA;
+    border-left: 3px solid #B08A3E;
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin: 26px 0;
+  }
+  .callout p { margin: 0; }
+  table { width: 100%; border-collapse: collapse; margin: 18px 0; font-size: 14.5px; background: #FFF; }
+  th, td { border: 1px solid #E2E0DA; padding: 10px 12px; text-align: left; vertical-align: top; }
+  th { background: #F0EEE9; font-weight: 600; }
+  code { background: #ECEAE4; padding: 1px 5px; border-radius: 4px; font-size: 14px; }
+  footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid #E2E0DA; font-size: 14px; color: #6B6B74; }
+  a { color: #8A6A28; }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <h1>映刻 Inkin 隐私政策</h1>
+  <div class="meta">
+    <span>生效日期：2026 年 11 月 12 日</span>
+    <span>版本：1.0</span>
+  </div>
+</header>
+
+<div class="callout">
+  <p><strong>一句话说明：</strong>映刻 Inkin 是一款本地相机应用。你拍的照片只留在你的设备上，我们不上传、不收集、不共享任何照片或个人信息。</p>
+</div>
+
+<h2>一、我们是谁</h2>
+<p>映刻 Inkin（应用名称：映刻 Inkin；包名：<code>com.tao.inkin</code>）由个人开发者陶宇翔（以下简称"我们"）开发并提供。本政策说明本应用如何处理与你的设备和数据相关的信息。</p>
+
+<h2>二、我们不收集的信息</h2>
+<ul>
+  <li>不收集你的姓名、手机号、身份证号、地址等任何个人身份信息；</li>
+  <li>不收集设备标识符（IMEI、OAID、序列号等）；</li>
+  <li>不收集位置信息、通讯录、短信、通话记录、剪贴板内容；</li>
+  <li>不进行用户行为统计分析，不接入任何广告 SDK；</li>
+  <li>不上传你的照片、预览画面或拍摄参数。</li>
+</ul>
+
+<h2>三、我们如何使用系统权限</h2>
+<table>
+  <thead>
+    <tr><th>权限 / 能力</th><th>使用场景</th><th>是否可拒绝</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>摄像头 <code>ohos.permission.CAMERA</code></td>
+      <td>仅用于取景预览与拍照。只有你进入拍摄界面并授权后才会调用；退出应用或切至后台时释放摄像头。</td>
+      <td>可拒绝。拒绝后仍可浏览应用内相册与桌面配方卡片，但无法拍摄。</td>
+    </tr>
+    <tr>
+      <td>保存到系统相册</td>
+      <td>仅当你主动点击"保存到相册"时，通过系统安全控件与系统授权弹窗获得一次性授权，将你选中的那一张照片写入系统相册。</td>
+      <td>可拒绝。拒绝仅影响本次保存，不影响应用其他功能。</td>
+    </tr>
+  </tbody>
+</table>
+<p>本应用不申请网络权限，当前版本不进行任何联网上传；不申请位置、通讯录、麦克风等其他敏感权限。</p>
+
+<h2>四、数据存储与保留</h2>
+<h3>1. 你拍摄的照片</h3>
+<p>照片保存在应用自身的沙箱目录（<code>files/shots</code>）内，仅在本应用内可见。你可以随时在应用内相册中删除单张照片，卸载应用即清除全部本地照片。删除操作不可恢复。</p>
+<h3>2. 你的使用偏好</h3>
+<p>你上次选择的滤镜配方名称会保存在设备本地首选项（Preferences）中，用于下次打开时恢复选择。该数据不含任何个人信息，卸载应用即清除。</p>
+<h3>3. 桌面元服务卡片</h3>
+<p>添加到桌面的配方卡片仅显示本地保存的配方名称与配色，不读取、不上传任何个人信息。</p>
+<h3>4. 我们不做云端备份</h3>
+<p>本应用不提供云同步与云端备份功能，我们没有任何你的照片副本。</p>
+
+<h2>五、信息共享与披露</h2>
+<p>我们不会向任何第三方出售、出租、共享、转让或公开披露你的信息。因本应用不收集、不上传信息，不存在向第三方提供数据的情形。如未来版本引入需要联网的功能，我们会在启用前更新本政策并再次征得你的同意。</p>
+
+<h2>六、未成年人保护</h2>
+<p>本应用不面向 14 周岁以下儿童单独提供服务，也不会有意收集儿童个人信息。若监护人发现相关情形，可通过下方联系方式与我们联系，我们会及时处理。</p>
+
+<h2>七、你的权利</h2>
+<ul>
+  <li><strong>删除权：</strong>在应用内删除任意照片；卸载应用即可清除全部本地数据；</li>
+  <li><strong>撤回授权：</strong>可在系统"设置 → 应用 → 映刻 Inkin → 权限"中随时关闭相机权限；</li>
+  <li><strong>拒绝权：</strong>首次启动时你可以拒绝隐私政策，拒绝后应用将退出且不收集任何信息。</li>
+</ul>
+
+<h2>八、本政策的更新</h2>
+<p>若应用功能或合规要求发生变化，我们会更新本政策并在应用内以弹窗形式重新提示。你可以在本页面随时查看最新版本。继续使用即表示你接受更新后的政策。</p>
+
+<h2>九、联系我们</h2>
+<p>如对本政策有任何疑问、意见或投诉，可通过以下方式联系开发者：</p>
+<ul>
+  <li>联系邮箱：<strong><a href="mailto:3529106081@qq.com">3529106081@qq.com</a></strong></li>
+  <li>应用名称：映刻 Inkin　包名：<code>com.tao.inkin</code></li>
+</ul>
+<p>我们将在收到你的请求后 15 个工作日内回复。</p>
+
+<footer>
+  映刻 Inkin · 隐私政策 v1.0 · 2026-11-12
+</footer>
+</main>
+</body>
+</html>
